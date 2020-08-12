@@ -57,7 +57,7 @@ ${response.linked}
 
 async function init() {
   try {
-      const responce = await promptUser();
+      const response = await promptUser();
 
       const readMe = generateMarkdownLang(response);
 
