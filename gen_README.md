@@ -1,8 +1,8 @@
 
-# meme gen
+# ReadMe Generator
 
 <p>Descrption:</p>
-it makes meme 
+builds readme files for projects 
 
 ### Table of Contents
 * [Description](#descripe)
@@ -14,18 +14,22 @@ it makes meme
 * [Github](#github)
 * [linkedin](#linked)
 
-<p>Contributions</p>
-it makes meme bro
-
 <p>License</p>
 MIT
-<p>Contributing"</p>
+
+<p>Contributions</p>
+help
 
 <p>Installation</p>
-just plug it in
+ok
+
+<p>Usage</p>
+plug it in
 
 #<p>Contact Information:
 <p>Github</p>
-ok
+<a>https.//github.com/mi6gy</a>
 <p>LinkedIn</p>
-**[LinkedIn](www.google.com)**
+<a>https://www.linkedin.com/in/mjimenez</a>
+<p>email address</p>
+(email@gmail)

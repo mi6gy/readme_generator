@@ -14,33 +14,43 @@ function promptUser() {
     {
       type: "input",
       name: "describe",
-      message: "Describe your project"
+      message: "Describe your project:"
     },
     {
       type: "list",
       choices: ["MIT", "GNU", "Apache", "Other", "None"],
       name: "license",
-      message: "What licenses are you using for this project"
+      message: "What licenses are you using for this project?"
     },
     {
       type:"input",
       name:"contribute",
-      message:"Contribution guidelines for this project",
+      message:"Contribution guidelines for this project:",
     },
     {
       type: "input",
       name: "install",
-      message: "What are the instructions for installation?"
+      message: "Instructions for installation"
+    },
+    {
+      type:"input",
+      name:"usage",
+      message:"Instructions for usage:",
     },
     {
       type: "input",
       name: "github",
-      message: "Enter the URL to your Github page"
+      message: "Please enter your Github username"
+    },
+    {
+      type:"input",
+      name:"linked",
+      message:"Please enter your linked in username",
     },
     {
       type: "input",
-      name: "linked",
-      message: "Enter the URL to your LinkedIn."
+      name: "email",
+      message: "Enter your email address for contact info"
     }
   ]);
 }
@@ -61,24 +71,26 @@ ${response.describe}
 * [Github](#github)
 * [linkedin](#linked)
 
-<p>Contributions</p>
-${response.contribute}
-
-<p>License</p>
+<p>License:</p>
 ${response.license}
-<p>Contributing"</p>
+
+<p>Contributions:</p>
+${response.contribute}
 
 <p>Installation</p>
 ${response.install}
 
+<p>Usage</p>
+${response.usage}
+
 #<p>Contact Information:
 <p>Github</p>
-## github.com/${data.linked} 
+<a>https.//github.com/${response.github}</a>
 <p>LinkedIn</p>
-**[LinkedIn](${response.linked})**
+<a>https://www.linkedin.com/in/${response.linked}</a>
+<p>email address</p>
+(${response.email})
 `
-
-
 }
 
 async function init() {
@@ -93,5 +105,21 @@ async function init() {
       console.log(err)
   }
 };
+
+
+
+
+
+// function renderBadge(license){
+//   if (license === "Apache") {
+//     return ('[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)')
+//   } else if (license === "MIT") {
+//     return ('[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)')
+//   } else if (license === "ISC") {
+//     return ('[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)')
+//   } else {
+//     return ('[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)')
+//   };
+  
 
 init()
