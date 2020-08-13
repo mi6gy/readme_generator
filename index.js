@@ -9,7 +9,7 @@ function promptUser() {
     {
       type: "input",
       name: "title",
-      message: "What is the title of your project"
+      message: "What is the title of your project?"
     },
     {
       type: "input",
@@ -21,6 +21,11 @@ function promptUser() {
       choices: ["MIT", "GNU", "Apache", "Other", "None"],
       name: "license",
       message: "What licenses are you using for this project"
+    },
+    {
+      type:"input",
+      name:"contribute",
+      message:"Contribution guidelines for this project",
     },
     {
       type: "input",
@@ -40,19 +45,40 @@ function promptUser() {
   ]);
 }
 function generateMarkdownLang(response) {
-    return `
-${response.tile}
+  return `
+# ${response.title}
 
-${response.describe}
+<p>Descrption:</p>
+${response.describe} 
 
+### Table of Contents
+* [Description](#descripe)
+* [License](#license)
+* [Installation](#install)
+* [Usage](#usage)
+* [Contributing](#contributing)
+* [Testing](#test)
+* [Github](#github)
+* [linkedin](#linked)
+
+<p>Contributions</p>
+${response.contribute}
+
+<p>License</p>
 ${response.license}
+<p>Contributing"</p>
 
+<p>Installation</p>
 ${response.install}
 
-${response.github}
-
-${response.linked}
+#<p>Contact Information:
+<p>Github</p>
+## github.com/${data.linked} 
+<p>LinkedIn</p>
+**[LinkedIn](${response.linked})**
 `
+
+
 }
 
 async function init() {
@@ -61,7 +87,7 @@ async function init() {
 
       const readMe = generateMarkdownLang(response);
 
-      await writeFileAsync("README.md", readMe);
+      await writeFileAsync("gen_README.md", readMe);
       console.log("Readme file created!");
   } catch (err) {
       console.log(err)
