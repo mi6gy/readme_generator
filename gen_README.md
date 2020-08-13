@@ -1,8 +1,8 @@
 
-# ReadMe Generator
+# MEME GEN 2004
 
 <p>Descrption:</p>
-builds readme files for projects 
+It makes the best memes of 2020 
 
 ### Table of Contents
 * [Description](#descripe)
@@ -14,22 +14,22 @@ builds readme files for projects
 * [Github](#github)
 * [linkedin](#linked)
 
-<p>License</p>
-MIT
+ <p>License:</p>
+GNU
 
-<p>Contributions</p>
-help
+<p>Contributions:</p>
+no one
 
 <p>Installation</p>
-ok
+none needed
 
 <p>Usage</p>
-plug it in
+just use a browser
 
 #<p>Contact Information:
 <p>Github</p>
-<a>https.//github.com/mi6gy</a>
+<a>https.//github.com/mi6g</a>
 <p>LinkedIn</p>
-<a>https://www.linkedin.com/in/mjimenez</a>
+<a>https://www.linkedin.com/in/mig6</a>
 <p>email address</p>
-(email@gmail)
+(email!)

@@ -19,4 +19,4 @@ Using the command line, the user is asked the following quesions:
 
 ##Screencastify:
 
-
+![](readme.gif)

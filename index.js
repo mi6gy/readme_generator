@@ -25,7 +25,7 @@ function promptUser() {
     {
       type:"input",
       name:"contribute",
-      message:"Contribution guidelines for this project:",
+      message:"Contribution for this project:",
     },
     {
       type: "input",
@@ -71,7 +71,7 @@ ${response.describe}
 * [Github](#github)
 * [linkedin](#linked)
 
-<p>License:</p>
+ <p>License:</p>
 ${response.license}
 
 <p>Contributions:</p>
