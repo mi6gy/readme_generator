@@ -83,7 +83,7 @@ ${response.install}
 <p>Usage</p>
 ${response.usage}
 
-#<p>Contact Information:
+<p>Contact Information:
 <p>Github</p>
 <a>https.//github.com/${response.github}</a>
 <p>LinkedIn</p>
@@ -122,4 +122,4 @@ async function init() {
 //   };
   
 
-init()
+init();
